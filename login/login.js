@@ -3,7 +3,7 @@ document.getElementById("submit-btn").addEventListener("click", function () {
   const password = document.getElementById("pass").value;
   let checkUser = validateUsername(username);
   if (checkUser != "") {
-    alert(checkUser);
+    document.getElementById("error").innerHTML = checkUser;
   } else {
   }
 });
@@ -17,8 +17,7 @@ function validateUsername(str) {
   } else if (str.length < 5 || str.length > 15) {
     error = "Username must have 5-15 characters";
   } else if (illegalChars.test(str)) {
-    error =
-      "Please enter valid Username. Use only numbers and alphabets";
+    error = "Use only numbers and alphabets";
   } else {
     error = "";
   }

@@ -15,18 +15,19 @@
       <h1>Login</h1>
       <div class="text-box">
         <i class="far fa-user-circle"></i>
+        <input id="user" type="text" placeholder="Username" name="" required />
+      </div>
+      <div class="text-box">
+        <i class="fas fa-key"></i>
         <input
-          id="user"
-          type="text"
-          placeholder="Username"
+          id="pass"
+          type="password"
+          placeholder="Password"
           name=""
           required
         />
       </div>
-      <div class="text-box">
-        <i class="fas fa-key"></i>
-        <input id="pass" type="password" placeholder="Password" name="" required />
-      </div>
+      <p id="error"></p>
       <div class="submit">
         <button id="submit-btn">Sign in</button>
       </div>
