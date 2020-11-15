@@ -15,13 +15,21 @@
       <h1>Login</h1>
       <div class="text-box">
         <i class="far fa-user-circle"></i>
-        <input id="user" type="text" placeholder="Username" name="" required />
+        <input
+          id="user"
+          type="text"
+          onfocus="this.value=''"
+          placeholder="Username"
+          name=""
+          required
+        />
       </div>
       <div class="text-box">
         <i class="fas fa-key"></i>
         <input
           id="pass"
           type="password"
+          onfocus="this.value=''"
           placeholder="Password"
           name=""
           required
