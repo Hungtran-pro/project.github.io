@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
+    <title>Sign up</title>
     <link rel="stylesheet" href="./login/login.css" />
     <script
       src="https://kit.fontawesome.com/933d5f6cc7.js"
@@ -12,7 +12,7 @@
   </head>
   <body>
     <form action="#" class="login-box">
-      <h1>Login</h1>
+      <h1>Sign up</h1>
       <div class="text-box">
         <i class="far fa-user-circle"></i>
         <input
@@ -31,6 +31,30 @@
           type="password"
           onfocus="this.value=''"
           placeholder="Password"
+          name=""
+          required
+        />
+      </div>
+      <div class="text-box">
+        <i class="fas fa-at"></i>
+        <input
+          id="email"
+          type="email"
+          onfocus="this.value=''"
+          placeholder="Fill in your email"
+          name=""
+          required
+        />
+      </div>
+      <div class="text-box">
+        <i class="fas fa-mobile-alt"></i>
+        <input
+          id="phoneNumber"
+          type="tel"
+          onfocus="this.value=''"
+          placeholder="(+84) 123456789"
+          pattern="[0-9]{9}"
+          title="9 numbers"
           name=""
           required
         />

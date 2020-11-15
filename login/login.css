@@ -3,21 +3,21 @@ body {
   padding: 0px;
   font-family: sans-serif;
   background: url(2.jpg) no-repeat;
-  /* background-position: top; */
+  background-position: top;
   background-size: cover;
 }
 
 .login-box {
-  width: 280px;
+  width: 350px;
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 45%;
   transform: translate(-50%, -50%);
   color: white;
 }
 
 .login-box h1 {
-  float: left;
+  text-align: center;
   font-size: 40px;
   font-weight: 650;
   margin-bottom: 20px;
@@ -30,13 +30,14 @@ body {
   overflow: hidden;
   font-size: 20px;
   padding: 8px 0;
-  margin: 8px 0;
+  margin: 12px 0;
   border-bottom: 1px solid white;
 }
 .text-box i {
   width: 26px;
   float: left;
   text-align: center;
+  margin-right: 3px;
 }
 .text-box input {
   background: none;
@@ -46,6 +47,10 @@ body {
   font-size: 18px;
   float: left;
   color: white;
+}
+
+.submit {
+  margin-top: 20px;
 }
 
 .submit button {
@@ -60,4 +65,5 @@ body {
 
 p{
   color: rgb(201, 204, 8);
+  padding-left: 30px;
 }
